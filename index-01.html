@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.thum{height: 200px; opacity: 0.3}
+		.thum:hover{opacity: 1}
+		.thum{style=:center;}
+
+
+	</style>
+</head>
+<body>
+ <h1>악기</h1><br>
+
+	<img src="d.jpg" class="thum" id="d">
+	<audio src="d.mp3" loop id ="ds"></audio>
+
+	<img src="e.jpg" class="thum" id="e">
+	<audio src="e.wav" loop id ="es"></audio>	
+<br>
+
+	<img src="a.jpg" class="thum" id="a">
+	<audio src="a.mp3" loop id ="as"></audio>
+
+	<img src="b.png" class="thum" id="b">
+	<audio src="b.mp3" loop id ="bs"></audio>	
+
+	<img src="c.png" class="thum" id="c">
+	<audio src="c.mp3" loop id ="cs"></audio>
+</br>
+
+	<script type="text/javascript">
+
+	var dstate = "off"
+		d.onclick = function(){
+			d.src = "d.gif";
+			ds.play();
+			if(dstate == "off"){
+				d.style.opacity = "1";
+				ds.play();
+				ds.volume = 0.3;
+				dstate ="on";
+
+			}else{
+				d.style.opacity = "0.3";
+				ds.pause();
+				dstate = "off";
+				}
+			}	
+
+	var estate = "off"
+		e.onclick = function(){
+			e.src = "e.gif";
+			es.play();
+			if(estate == "off"){
+				e.style.opacity = "1";
+				es.play();
+				es.volume = 1;				
+				estate ="on";
+
+			}else{
+				e.style.opacity = "0.3";
+				es.pause();
+				estate = "off";
+				}
+			}		
+
+
+	var astate = "off"
+		a.onclick = function(){
+			a.src = "a.gif";
+			as.play();
+			if(astate == "off"){
+				a.style.opacity = "1";
+				as.play();
+				as.volume = 0.3;				
+				astate ="on";
+
+			}else{
+				a.style.opacity = "0.3";
+				as.pause();
+				astate = "off";
+				}
+			}		
+			
+	var bstate = "off"
+		b.onclick = function(){
+			b.src = "b.gif";
+			bs.play();
+			if(bstate == "off"){
+				b.style.opacity = "1";
+				bs.play();
+				bs.volume = 0.3;				
+				bstate ="on";
+
+			}else{
+				b.style.opacity = "0.3";
+				bs.pause();
+				bstate = "off";
+				}
+			}	
+
+	var cstate = "off"
+		c.onclick = function(){
+			c.src = "c.gif";
+			cs.play();
+			if(cstate == "off"){
+				c.style.opacity = "1";
+				cs.play();
+				cs.volume = 1;				
+				cstate ="on";
+
+			}else{
+				c.style.opacity = "0.3";
+				cs.pause();
+				cstate = "off";
+				}
+			}	
+
+	</script>													
+</body>
+</html>
